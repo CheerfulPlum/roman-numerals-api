@@ -1,0 +1,9 @@
+services:
+  roman-numerals-api:
+    container_name: roman_numerals_api
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/app
+    working_dir: /app
+    build: .
